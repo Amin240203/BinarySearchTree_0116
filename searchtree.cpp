@@ -2,12 +2,12 @@
 #include <string>
 using namespace std;
 
-class node {
+class Node {
     public:
     string info;
-        node *leftchild;
-        node *rightchild;
-        node(string i, node *l, node *r)
+        Node *leftchild;
+        Node *rightchild;
+        Node(string i, Node *l, Node *r)
         {
             info = i;
             leftchild = l;
@@ -17,7 +17,7 @@ class node {
 
 class BinaryTree{
     public:
-    node *ROOT;
+    Node *ROOT;
     BinaryTree()
     {
         ROOT = NULL; // Initializing ROOT to null
@@ -26,6 +26,13 @@ class BinaryTree{
     // Insert a node in the binary search tree
     void insert(string element)
     {
-        
+        Node *newNode = new Node(element, NULL, NULL);
+
+        newNode->info = element;
+        newNode->leftchild = NULL;
+        newNode->rightchild = NULL;
+
+        Node *parent = NULL;
+        Node *currentNode = NULL;
     }
 };
