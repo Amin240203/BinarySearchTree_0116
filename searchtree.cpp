@@ -13,4 +13,13 @@ class node {
             leftchild = l;
             rightchild = r;
         }
-}
+};
+
+class BinaryTree{
+    public:
+    node *ROOT;
+    BinaryTree()
+    {
+        ROOT = NULL; // Initializing ROOT to null
+    }
+};
